@@ -1,6 +1,4 @@
-# scipy.fftpack is deprecated, use scipy.fft once FFT makes sense
 import time
-
 import matplotlib
 import sounddevice as sd
 import scipy
@@ -50,11 +48,9 @@ print(HighestAudibleFrequency)
 plt.show()
 
 # 4. Generate a tone:
-# NOTE: This currently just saves the file but doesn't play it, this should be fixed soon
 tone_duration_s = 5
 
 # To find the fifth of a note, multiply its frequency by 1.5
-# NOTE: Replace 440 with HighestAudibleFrequency once the Fourier issue is resolved
 fifth_freq_hz = int(HighestAudibleFrequency * 1.5)
 
 each_sample_number = np.arange(tone_duration_s * sps_hz)
