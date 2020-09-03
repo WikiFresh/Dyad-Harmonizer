@@ -48,7 +48,7 @@ print(HighestAudibleFrequency)
 plt.show()
 
 # 4. Generate a tone:
-tone_duration_s = 5
+tone_duration_s = 3
 
 # To find the fifth of a note, multiply its frequency by 1.5
 fifth_freq_hz = int(HighestAudibleFrequency * 1.5)
