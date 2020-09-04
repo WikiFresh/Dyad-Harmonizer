@@ -30,8 +30,6 @@ max_idx = np.argmax(spectrum)
 HighestAudibleFrequency = freqs[max_idx]
 print(HighestAudibleFrequency)
 
-plt.show()
-
 # 4. Generate a tone:
 tone_duration_s = 3
 
@@ -49,3 +47,5 @@ write('perfect_fifth_sine.wav', sps_hz, waveform_integers)
 wave_obj = sa.WaveObject.from_wave_file('perfect_fifth_sine.wav')
 play_obj = wave_obj.play()
 play_obj.wait_done()  # Wait until sound has finished playing
+
+plt.show()
